@@ -1,0 +1,115 @@
+
+/* ===========================
+   Basic Reset and Styling
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #222;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+    position: fixed;              /* Keeps header at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0d47a1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;             /* Using em units */
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.8rem;            /* Using rem units */
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;                     /* Using em for spacing */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Main Content
+=========================== */
+main {
+    flex: 1;
+    margin-top: 80px;             /* Space for fixed header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 10%;             /* Using vh and % units */
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;              /* Automatically wraps on smaller screens */
+    align-items: center;
+    gap: 2rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+    width: 40%;                   /* Using % for responsiveness */
+    max-width: 200px;             /* Using px for limit */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0d47a1;
+}
+
+.bio {
+    width: 55%;                   /* Responsive width */
+}
+
+.bio h2 {
+    font-size: 1.5rem;
+    color: #0d47a1;
+    margin-bottom: 1em;
+}
+
+.bio p {
+    font-size: 1rem;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;             /* Keeps footer at bottom */
+}
