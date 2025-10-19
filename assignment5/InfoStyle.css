@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main spacing */
+main {
+    margin-top: 80px; /* for header */
+}
+
+/* Sections common */
+section {
+    padding: 5em 10%;
+    color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Parallax sections */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* History */
+.history {
+    background-image: url('paris-history.jpg');
+}
+
+/* Tourism */
+.tourism {
+    background-image: url('paris-tourism.jpg');
+}
+
+/* Culture (linear gradient) */
+.culture {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #222;
+}
+
+/* Food (radial gradient) */
+.food {
+    background: radial-gradient(circle, #ffefba, #ffffff);
+    color: #222;
+}
+
+/* Section text */
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+}

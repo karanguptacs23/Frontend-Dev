@@ -1,0 +1,96 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 2em 5%;
+}
+
+/* Team container */
+.team-container {
+    display: flex;
+    gap: 2em;              /* spacing between cards */
+    justify-content: center;
+    flex-wrap: wrap;       /* wrap on small screens */
+}
+
+/* Team card */
+.team-card {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5em;
+    width: 300px;          /* fixed width for columns */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Highlighted card (Team Lead) */
+.team-card.lead {
+    background: #ffeb3b;
+    border: 2px solid #fbc02d;
+}
+
+/* Card text */
+.team-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    color: #555;
+}
+
+.team-card p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive layout for screens < 600px */
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
