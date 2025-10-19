@@ -1,0 +1,116 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2em 0;
+    background: #0d47a1;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Pricing Container */
+.pricing-container {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    padding: 3em 5%;
+    flex-wrap: wrap; /* Responsive wrapping */
+}
+
+/* Pricing Card */
+.pricing-card {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 2em 1.5em;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.pricing-card:hover {
+    transform: scale(1.05);
+    background: #e3f2fd;
+}
+
+/* Popular Plan Highlight */
+.pricing-card.popular {
+    border: 3px solid #ff9800;
+    background: #fff8e1;
+}
+
+/* Plan Heading */
+.pricing-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+/* Features List */
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 1.5em;
+}
+
+.pricing-card ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Price */
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+
+/* Button */
+.btn {
+    text-decoration: none;
+    background: #0d47a1;
+    color: white;
+    padding: 0.7em 1.5em;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #1976d2;
+}
+
+/* Footer */
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 900px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
