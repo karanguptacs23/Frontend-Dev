@@ -1,0 +1,62 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Georgia", serif;
+    background-color: #fdf6e3;
+    color: #222;
+    line-height: 1.8;
+}
+
+/* Main content area */
+.content {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #ffffff;
+    column-count: 3;          /* three columns */
+    column-gap: 2em;          /* spacing between columns */
+}
+
+/* Main heading spans all columns */
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+    column-span: all;
+}
+
+/* Paragraph styling */
+.content p {
+    text-align: justify;
+    margin-bottom: 1em;
+    font-size: 1rem;
+}
+
+/* Float image */
+.float-image {
+    float: left;
+    width: 150px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+}
+
+/* Responsive: adjust columns on small screens */
+@media (max-width: 900px) {
+    .content {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        column-count: 1;
+    }
+}
