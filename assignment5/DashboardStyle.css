@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #0d47a1;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    z-index: 1000;
+}
+
+/* Container for sidebar and main */
+.container {
+    display: flex;
+    margin-top: 60px; /* offset for fixed header */
+    min-height: calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #1e88e5;
+    color: white;
+    flex-shrink: 0;
+    height: 100%;
+    padding: 1em;
+    position: sticky;
+    top: 60px; /* stays below header */
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 1em;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em; /* spacing between content boxes */
+}
+
+/* Content Boxes */
+.content-box {
+    background: white;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings inside content boxes */
+.content-box h2 {
+    margin-bottom: 0.5em;
+    color: #0d47a1;
+}
+
+/* Responsive: stack sidebar above content on small screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        height: auto;
+    }
+}
