@@ -1,0 +1,5 @@
+body{text-align:center;font-family:Arial;padding:20px;}
+.outer{display:flex;justify-content:center;margin-top:20px;}
+.border-box{background:#ffe0b2;padding:20px;border:4px solid #fb8c00;}
+.padding-box{background:#fff3e0;padding:20px;}
+.content-box{background:#fff;padding:10px;border:1px solid #ccc;}
