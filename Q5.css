@@ -1,7 +1,0 @@
-body{font-family:Arial;padding:20px;}
-/* Attribute selector */ input[type="text"]{border:2px solid #888;padding:6px;}
-/* Pseudo-classes */ li:nth-child(odd){background:#f0f0f0;}
-li:hover{color:#0077cc;}
-/* Pseudo-elements */ p::first-line{font-weight:bold;} p::before{content:"→ ";}
-/* Attribute starts-with selector */ a[href^="https"]{color:green;}
-/* Combinator examples */ ul>li.special{font-style:italic;} p span{color:red;}
