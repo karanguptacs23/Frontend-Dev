@@ -1,0 +1,5 @@
+body{text-align:center;font-family:Arial;padding:20px;}
+.cards{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:20px;}
+.card{width:160px;height:160px;background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:center;transition:.3s;}
+h2{text-shadow:1px 1px 2px #aaa;}
+.card:hover{transform:translateY(-8px);box-shadow:0 8px 18px rgba(0,0,0,0.3);}
