@@ -1,0 +1,4 @@
+body{text-align:center;font-family:Arial;margin:20px;}
+.flex{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
+.box{width:100px;height:100px;background:#90caf9;display:flex;align-items:center;justify-content:center;transition:all .4s ease;}
+.rotate:hover{transform:rotate(20deg);} .scale:hover{transform:scale(1.2);} .translate:hover{transform:translateY(-20px);} .skew:hover{transform:skew(10deg);}
