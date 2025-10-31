@@ -1,0 +1,6 @@
+body,html{height:100%;margin:0;font-family:Arial;}
+.container{display:flex;justify-content:center;align-items:center;height:100%;gap:16px;flex-wrap:wrap;}
+.box{display:flex;align-items:center;justify-content:center;color:#fff;border-radius:6px;overflow:auto;}
+.px{width:100px;height:100px;background:#e57373;}
+.percent{width:50%;min-height:80px;background:#64b5f6;max-width:400px;}
+.vh{width:120px;height:30vh;background:#81c784;}
