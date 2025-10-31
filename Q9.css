@@ -1,0 +1,9 @@
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+.wrap{height:100vh;display:flex;align-items:center;justify-content:center}
+.card{width:260px;height:340px;perspective:1000px}
+.card .face{position:absolute;width:100%;height:100%;backface-visibility:hidden;border:1px solid #ddd;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;border-radius:6px}
+.card .front{background:#fff;transform:rotateY(0)}
+.card .back{background:#fafafa;transform:rotateY(180deg)}
+.card{position:relative;transition:transform .6s;transform-style:preserve-3d}
+.card:hover{transform:rotateY(180deg)}
+.img{width:100%;height:160px;background:#eee;display:flex;align-items:center;justify-content:center;margin-top:8px}
