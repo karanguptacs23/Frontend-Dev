@@ -1,0 +1,4 @@
+body{font-family:Georgia,serif;line-height:1.6;padding:20px;}
+h1{text-align:center;text-shadow:1px 1px 2px #ccc;}
+mark{background:#ffeb3b;} strong{color:#000;} em{color:#0077cc;}
+p::first-letter{font-size:2em;font-weight:bold;} p::first-line{color:#555;}
