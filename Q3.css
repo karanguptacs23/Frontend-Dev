@@ -1,0 +1,6 @@
+body,html{margin:0;height:100%;font-family:Arial,sans-serif;}
+header,footer{text-align:center;padding:16px;background:#222;color:#fff;position:fixed;width:100%;left:0;}
+header{top:0;}footer{bottom:0;}
+section{height:100vh;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5em;}
+.linear{background:linear-gradient(135deg,#4a90e2,#50e3c2);margin-top:60px;}
+.radial{background:radial-gradient(circle,#f5a623,#f8e71c);background-attachment:fixed;}
