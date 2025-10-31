@@ -1,0 +1,7 @@
+body{margin:0;font-family:Arial;}
+.navbar{display:flex;justify-content:center;gap:16px;padding:14px;background:#333;}
+.navbar a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:4px;transition:all .3s ease;}
+.navbar a:hover{background:#555;}
+.navbar a.active{background:#0077cc;}
+footer{text-align:center;padding:12px;background:#f1f1f1;margin-top:20px;}
+@media(max-width:700px){.navbar{flex-direction:column;align-items:center;}}
