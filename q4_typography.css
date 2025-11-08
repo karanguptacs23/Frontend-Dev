@@ -1,0 +1,18 @@
+/* Theme: blue / white / gray - shared variables */
+:root{
+  --primary:#1e88e5;
+  --muted:#f4f7fb;
+  --accent:#0d47a1;
+  --text:#222;
+}
+/* q4_typography.css */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:var(--muted);color:var(--text);display:flex;align-items:center;justify-content:center;height:100vh}
+.typography{max-width:900px;padding:32px;text-align:center;background:white;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.typography h1{font-size:clamp(1.5rem,4vw,3rem);margin:0 0 12px}
+.typography p{font-size:clamp(1rem,2vw,1.5rem);line-height:1.6;margin:0}
+/* Adjust for smaller screens */
+@media (max-width:700px){
+  .typography{padding:20px}
+  .typography p{line-height:1.5}
+}
