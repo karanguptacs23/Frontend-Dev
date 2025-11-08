@@ -1,0 +1,21 @@
+/* Theme: blue / white / gray - shared variables */
+:root{
+  --primary:#1e88e5;
+  --muted:#f4f7fb;
+  --accent:#0d47a1;
+  --text:#222;
+}
+/* q3_cards.css */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;padding:18px;background:var(--muted)}
+.cards{display:flex;gap:16px;flex-wrap:wrap}
+.card{flex:1 1 calc(25% - 16px);background:white;padding:24px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.05);transition:background .25s ease}
+.card:hover{background:linear-gradient(135deg,#e8f3ff,#ffffff)}
+/* Tablet: 2 columns */
+@media (max-width:900px){
+  .card{flex-basis:calc(50% - 16px)}
+}
+/* Mobile: 1 column */
+@media (max-width:600px){
+  .card{flex-basis:100%}
+}
