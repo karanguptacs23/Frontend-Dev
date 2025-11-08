@@ -1,0 +1,20 @@
+/* Theme: blue / white / gray - shared variables */
+:root{
+  --primary:#1e88e5;
+  --muted:#f4f7fb;
+  --accent:#0d47a1;
+  --text:#222;
+}
+/* q5_filter_cards.css */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;padding:20px;background:var(--muted)}
+.profiles{display:flex;gap:16px;animation:fadeIn .8s ease both}
+.profile{flex:1;background:white;padding:16px;border-radius:10px;text-align:center;transition:transform .25s ease,box-shadow .25s ease}
+.profile img{width:100%;height:auto;border-radius:8px;filter:grayscale(1);transition:filter .3s ease}
+.profile:hover img{filter:none}
+.profile:hover{transform:translateY(-10px);box-shadow:0 8px 20px rgba(0,0,0,.08)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+/* Stack vertically below 800px */
+@media (max-width:800px){
+  .profiles{flex-direction:column}
+}
