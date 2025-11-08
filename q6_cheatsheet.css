@@ -1,0 +1,19 @@
+/* Theme: blue / white / gray - shared variables */
+:root{
+  --primary:#1e88e5;
+  --muted:#f4f7fb;
+  --accent:#0d47a1;
+  --text:#222;
+}
+/* q6_cheatsheet.css */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:var(--muted);padding:18px}
+.sheet{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.item{background:white;padding:14px;border-radius:8px;transition:transform .2s ease,box-shadow .2s ease}
+.item:hover{transform:translateY(-6px);box-shadow:0 10px 24px rgba(0,0,0,.06)}
+.item h4{margin:0 0 6px;color:var(--accent)}
+/* Small screens: stacked rows with heading followed by value */
+@media (max-width:700px){
+  .sheet{grid-template-columns:1fr}
+  .item{display:block}
+}
