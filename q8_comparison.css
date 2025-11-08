@@ -1,0 +1,20 @@
+/* Theme: blue / white / gray - shared variables */
+:root{
+  --primary:#1e88e5;
+  --muted:#f4f7fb;
+  --accent:#0d47a1;
+  --text:#222;
+}
+/* q8_comparison.css */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:var(--muted);padding:12px}
+.compare{display:flex;gap:12px}
+.side{flex:1;background:white;padding:8px;border-radius:8px;text-align:center}
+.side img{width:100%;height:auto;transition:filter .4s ease}
+.side:nth-child(2) img{filter:brightness(.6) contrast(1.2)}
+.side:nth-child(2) img:hover{filter:none}
+/* Stack vertically below 700px */
+@media (max-width:700px){
+  .compare{flex-direction:column}
+  .side{margin-bottom:8px}
+}
